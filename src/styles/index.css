@@ -10,3 +10,33 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.titulo{
+    font-size: 100px;
+    opacity: 20%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.home{
+    border:  5px red solid;
+    width: 50rem;
+    height: 30rem;
+    margin: 0 auto;
+}
+.formulario{
+    border: 5px blue solid;
+    width: 35rem;
+    height: 18rem;
+    margin: 0 auto;
+}
+.inp{
+    width: 100%;
+    height: 3.3rem;
+    font-size: 3rem;
+    padding-left: 4rem;
+}
+.btn{
+    border: black 3px solid;
+    margin-top: 8px;
+    color: black;
+    background: grey;
+}

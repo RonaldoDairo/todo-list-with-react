@@ -1,24 +1,24 @@
-import React from "react";
+import React,{ useState } from "react";
+import { Form } from "./form.jsx";
+import { Lista } from "./user.jsx";
 
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+
 
 //create your first component
 const Home = () => {
+	const [state,setState] = useState([])
+	
+	const handelSubmit = (newUser)=>{
+		
+		setState([...state,newUser]);
+
+	}	
+
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="text-center home"><h1 className="titulo">todos</h1>
+			<div className="Content-form"><Form handelSubmit={handelSubmit}/>	</div>
+			<div className="Content-user">{state.map((user ,index)=>  <Lista key={index} user={user} />)}	</div>
 		</div>
 	);
 };
