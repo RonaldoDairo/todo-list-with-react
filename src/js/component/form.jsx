@@ -18,16 +18,17 @@ export const Form = ({ handelSubmit })=>{
     console.log(user)
 	const sendData = (e) =>{
         e.preventDefault();
+       if (e.key ==="Enter"){}
         handelSubmit(user);
         setUser(initialState);
 	}
+    //if (event.key === "Enter")
 
     return (
             <form  className="formulario" onChange={handelChange} onSubmit={sendData}>
-                <input type="text"  name="tarea" className="inp" value={user.tarea} required minLength={3}/>
+                <input type="text"  name="tarea"  className="inp" value={user.tarea} required minLength={3}/>
                 <input type="text"  name="prueba" className="inp" value={user.prueba} required minLength={3}/>
-                ADD LIST TO DO
-                <input  className="btn" type="submit" value="save"/>
+                <button className="btn" type="submit">Add one list</button>
             </form>
     )
 }

@@ -17,13 +17,13 @@
     font-family: 'Courier New', Courier, monospace;
 }
 .home{
-    border:  5px red solid;
+    background-color: bisque;
     width: 50rem;
     height: 30rem;
     margin: 0 auto;
 }
 .formulario{
-    border: 5px blue solid;
+    background-color: blanchedalmond;
     width: 35rem;
     height: 18rem;
     margin: 0 auto;
@@ -33,10 +33,26 @@
     height: 3.3rem;
     font-size: 3rem;
     padding-left: 4rem;
+    
+    
 }
 .btn{
     border: black 3px solid;
     margin-top: 8px;
+    
     color: black;
     background: grey;
+}
+
+.pauno, .pados{
+    border: 2px grey solid;
+    height: 3rem;
+    margin: 0 auto;
+    width: 35rem;
+    text-align: left;
+    padding-left: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    padding-bottom: 4rem;
+    background-color: bisque;
 }

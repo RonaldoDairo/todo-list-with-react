@@ -2,13 +2,13 @@ import React from "react";
 
 
 export const Lista = ({user})=>{
-   const { tarea, prueba,}git user 
+   const { tarea, prueba,}= user 
    
 
     return (         
         <div className="card">
-            <p>tarea : {tarea}</p>
-            <p>prueba : {prueba}</p>
+            <p className="pauno">tarea : {tarea}</p>
+            <p className="pados">prueba : {prueba}</p>
         </div>
     )
 }
