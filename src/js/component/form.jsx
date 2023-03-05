@@ -18,12 +18,9 @@ export const Form = ({ handelSubmit })=>{
     console.log(user)
 	const sendData = (e) =>{
         e.preventDefault();
-       if (e.key ==="Enter"){}
         handelSubmit(user);
         setUser(initialState);
 	}
-    //if (event.key === "Enter")
-
     return (
             <form  className="formulario" onChange={handelChange} onSubmit={sendData}>
                 <input type="text"  name="tarea"  className="inp" value={user.tarea} required minLength={3}/>

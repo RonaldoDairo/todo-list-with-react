@@ -17,8 +17,8 @@ const Home = () => {
 
 	return (
 		<div className="text-center home"><h1 className="titulo">todos</h1>
-			<div className="Content-form"><Form handelSubmit={handelSubmit}/>{state.map((user ,index)=>  <Lista key={index} user={user} />)}	</div>
-			<div className="Content-user">	</div>
+			<div className="Content-form"><Form handelSubmit={handelSubmit}/></div>
+			<div className="Content-user">	{state.map((user ,index)=>  <Lista key={index} user={user} />)}	</div>
 				
 		</div>
 	);

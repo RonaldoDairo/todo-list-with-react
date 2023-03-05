@@ -33,13 +33,10 @@
     height: 3.3rem;
     font-size: 3rem;
     padding-left: 4rem;
-    
-    
 }
 .btn{
     border: black 3px solid;
     margin-top: 8px;
-    
     color: black;
     background: grey;
 }
